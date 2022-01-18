@@ -70,16 +70,16 @@ main h2:first-child {
 }
 
 .example {
-  background-color: var(--blue-1);
+  background-color: var(--lime-1);
   padding: var(--size-3);
   border: var(--border-size-2) solid var(--gray-9);
   border-radius: var(--radius-2);
-  color: var(--blue-8);
+  color: var(--gray-8);
 }
 
 .example h3,
 .example h4 {
-  color: var(--blue-8);
+  color: var(--gray-8);
 }
 
 .example h3 {
@@ -101,4 +101,59 @@ main h2:first-child {
 .example.no-font h3,
 .example.no-font h4 {
   font-family: serif;
+}
+
+.example table {
+  border-width: 1px;
+}
+
+.example table td {
+  border-width: 1px;
+}
+
+.example.floats img {
+  float: left;
+}
+.example.floats .main-text {
+  float: left;
+  max-width: 40%;
+}
+.example.floats .sidebar {
+  float: right;
+}
+.example .clearfix {
+  clear: both;
+}
+
+/* Responsive Design */
+
+.example.resp img {
+  margin: 0 auto;
+}
+
+.example.resp h3,
+.example.resp h4 {
+  margin-top: var(--size-3);
+}
+
+@media (min-width: 900px) {
+  .example.resp img {
+    float: left;
+    padding-right: var(--size-3);
+    padding-bottom: var(--size-3);
+  }
+  .example.resp .sidebar {
+    clear: both;
+  }
+}
+@media (min-width: 1500px) {
+  .example.resp .main-text {
+    float: left;
+    max-width: 35%;
+  }
+
+  .example.resp .sidebar {
+    clear: none;
+    float: right;
+  }
 }
