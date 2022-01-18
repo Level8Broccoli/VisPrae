@@ -1,2 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Krona+One&display=swap");
+
 body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Krona One", sans-serif;
+}
+
+/* layout */
+
+body {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  background-image: url("/background.svg");
+  background-repeat: repeat;
+}
+
+header {
+  background-image: var(--gradient-9);
+  box-shadow: var(--shadow-6);
+  z-index: 100;
+  height: max-content;
+  padding: var(--size-3);
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+header a {
+  text-align: center;
+}
+
+main {
+  padding: var(--size-5);
+}
+
+footer {
+  padding: var(--size-3);
+  text-align: center;
 }

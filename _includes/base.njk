@@ -10,7 +10,14 @@
         <link rel="stylesheet" href="/custom.css">
     </head>
     <body>
-
-        {{ content | safe }}
+        <header>
+            <a href="{{before if before else '/'}}">↞ zurück</a>
+            <a href="/">Startseite</a>
+            <a href="{{next if next else '/'}}">weiter ↠</a>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>Oliver Bucher</footer>
     </body>
 </html>
