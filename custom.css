@@ -45,3 +45,12 @@ footer {
   padding: var(--size-3);
   text-align: center;
 }
+
+h1 {
+  font-size: var(--size-11);
+}
+
+a,
+a:visited {
+  color: var(--orange-9);
+}
