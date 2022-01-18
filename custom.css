@@ -24,13 +24,14 @@ body {
 }
 
 header {
-  background-image: var(--gradient-9);
+  background-image: var(--gradient-16);
   box-shadow: var(--shadow-6);
   z-index: 100;
   height: max-content;
   padding: var(--size-3);
   display: grid;
   grid-template-columns: max-content 1fr max-content;
+  font-size: 0.75em;
 }
 
 header a {
@@ -38,7 +39,7 @@ header a {
 }
 
 main {
-  padding: var(--size-5);
+  padding: var(--size-6) var(--size-9);
 }
 
 footer {
@@ -47,10 +48,57 @@ footer {
 }
 
 h1 {
-  font-size: var(--size-11);
+  font-size: var(--size-10);
 }
 
 a,
 a:visited {
   color: var(--orange-9);
+}
+
+em {
+  font-style: normal;
+  color: var(--orange-3);
+}
+
+:root {
+  font-size: calc(1rem + 0.5vw);
+}
+
+main h2:first-child {
+  margin-bottom: var(--size-3);
+}
+
+.example {
+  background-color: var(--blue-1);
+  padding: var(--size-3);
+  border: var(--border-size-2) solid var(--gray-9);
+  border-radius: var(--radius-2);
+  color: var(--blue-8);
+}
+
+.example h3,
+.example h4 {
+  color: var(--blue-8);
+}
+
+.example h3 {
+  font-size: 42px;
+}
+
+.example h4 {
+  font-size: 32px;
+}
+
+.example p {
+  font-size: 24px;
+}
+
+.example.no-font {
+  font-family: serif;
+}
+
+.example.no-font h3,
+.example.no-font h4 {
+  font-family: serif;
 }
