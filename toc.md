@@ -7,8 +7,8 @@ next: /flow
 
 - Evolution des Web Designs
 - Ziele von Intrinsischem Web Design
-- Beispiel
-- weitere Ressourcen und Inspiration
+- Beispiele
+- Ressourcen und Inspiration
 
 ## Ziel
 
