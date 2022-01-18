@@ -202,3 +202,19 @@ main h2:first-child {
 .example.intr2 .sidebar {
   grid-column: span 2;
 }
+
+.example.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+}
+
+.example.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((50rem - 100%) * 999);
+}
+
+.example.switcher > :nth-last-child(n + 5),
+.example.switcher > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%;
+}
