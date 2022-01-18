@@ -64,12 +64,26 @@ em {
 :root {
   font-size: calc(1rem + 0.5vw);
 }
-
+main h2 {
+  margin-block: var(--size-3);
+}
 main h2:first-child {
-  margin-bottom: var(--size-3);
+  margin-top: 0;
+}
+
+.example::before {
+  content: "Demo";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: var(--lime-9);
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .example {
+  position: relative;
   background-color: var(--lime-1);
   padding: var(--size-3);
   border: var(--border-size-2) solid var(--gray-9);
@@ -156,4 +170,35 @@ main h2:first-child {
     clear: none;
     float: right;
   }
+}
+
+.example.intr {
+  display: grid;
+  grid-template-columns: 20% 45% 20%;
+  gap: var(--size-3);
+}
+
+/* @media (max-width: 800px) {
+  .example.intr {
+    grid-template-columns: 20% 80%;
+  }
+
+  .example.intr .sidebar {
+  grid-column: span 2;
+  }
+} */
+
+.example.intr2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--size-3);
+  align-items: start;
+}
+
+.example.intr2 .main-text {
+  grid-column: span 3;
+}
+
+.example.intr2 .sidebar {
+  grid-column: span 2;
 }
